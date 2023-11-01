@@ -25,7 +25,7 @@ pipeline {
                       withCredentials([string(credentialsId: 'dockerhbpwd', variable: 'dockerhbpwd')]) {
                       sh 'docker login -u gjoshi24 -p ${dockerhbpwd}'
                            }
-                      sh 'docker push gjoshi24/addressbook'
+                      sh 'docker push gjoshi24/addressbook:v1'
                   }
               }
          }
