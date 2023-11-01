@@ -15,7 +15,7 @@ pipeline {
             stage('Build image'){
               steps{
                   script{
-                     sh 'docker build -t gjoshi24/addressbook .'
+                     sh 'docker build -t gjoshi24/addressbook:v1 .'
                   }
               }
           }
